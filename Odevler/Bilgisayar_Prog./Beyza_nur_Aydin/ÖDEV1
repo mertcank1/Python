@@ -1,0 +1,137 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "67OB0hyQAPoK",
+        "outputId": "1996ff68-d2f3-4c81-8a43-5bbde4e6b1b8"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "400 Kelvin, 126.85 Celsius derecesine eşittir.\n"
+          ]
+        }
+      ],
+      "source": [
+        "kelvin = 400\n",
+        "celsius = kelvin - 273.15\n",
+        "print(f\"{kelvin} Kelvin, {celsius:.2f} Celsius derecesine eşittir.\")\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pi = 3.14\n",
+        "yaricap = 1.5\n",
+        "\n",
+        "alan = pi * yaricap ** 2\n",
+        "cevre = 2 * pi * yaricap\n",
+        "\n",
+        "print(f\"Yarıçapı {yaricap} cm olan dairenin alanı: {alan:.2f} cm²\")\n",
+        "print(f\"Yarıçapı {yaricap} cm olan dairenin çevresi: {cevre:.2f} cm\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oLoOBSiDAphQ",
+        "outputId": "3726feb2-4b9e-48db-a4ae-3f6666f171a4"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Yarıçapı 1.5 cm olan dairenin alanı: 7.07 cm²\n",
+            "Yarıçapı 1.5 cm olan dairenin çevresi: 9.42 cm\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sayi = int(input(\"Dört basamaklı bir sayı girin: \"))\n",
+        "\n",
+        "ilkbasamak = sayi // 1000\n",
+        "\n",
+        "sonbasamak = sayi % 10\n",
+        "\n",
+        "toplam = ilkbasamak + sonbasamak\n",
+        "\n",
+        "print(f\"Girdiğiniz sayının ilk basamağı ({ilkbasamak}) ile son basamağı ({sonbasamak}) toplamı: {toplam}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EksRt_dNBh10",
+        "outputId": "1124a84e-7610-4e08-b9d8-34816153a673"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dört basamaklı bir sayı girin: 6789\n",
+            "Girdiğiniz sayının ilk basamağı (6) ile son basamağı (9) toplamı: 15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "yol_uzunlugu_km = 500\n",
+        "hiz_km_s = 110\n",
+        "\n",
+        "toplam_saat = yol_uzunlugu_km / hiz_km_s\n",
+        "\n",
+        "toplam_saat_int = int(toplam_saat)\n",
+        "toplam_dakika = (toplam_saat - toplam_saat_int) * 60\n",
+        "\n",
+        "print(f\"Araba {yol_uzunlugu_km} km yolu {toplam_saat_int} saat {int(toplam_dakika)} dakikada gidecektir.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nQ1So70FCzMC",
+        "outputId": "c28e2a10-3ba5-488d-c791-66a6408d6310"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Araba 500 km yolu 4 saat 32 dakikada gidecektir.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

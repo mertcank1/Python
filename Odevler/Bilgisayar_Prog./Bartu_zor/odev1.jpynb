@@ -1,0 +1,22 @@
+1.ALIŞTIRMA
+Kelvin = 400
+Celcius = (Kelvin - 273.15)
+print(Celcius)
+2.ALIŞTIRMA
+r = 1.5
+pi = 3.14
+DaireAlan = (pi*(r*r))
+DaireÇevre = (2*pi*r)
+print ("Dairenin alanı = " + str(DaireAlan)+" Daire çevresi = " + str(DaireÇevre) )
+3.ALIŞTIRMA
+dörtbasamaklısayı = int(input("4 basamaklı bir sayı giriniz "))
+dörtbasamaklısayı = str(dörtbasamaklısayı)
+ilkbasamak = int(dörtbasamaklısayı[0])
+sonbasamak = int(dörtbasamaklısayı[-1])
+toplam = (ilkbasamak + sonbasamak)
+print (dörtbasamaklısayı," sayısının ilk ve son basamağının toplamı = " , toplam)
+4.ALIŞTIRMA
+arabahız = float(110)
+yol = float(500)
+saat = float(yol/arabahız)
+print("bu araç sabit 110km/s hızla 500km'lik yolu " , saat ," sürede gider")

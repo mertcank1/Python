@@ -1,0 +1,57 @@
+#5'e ve 7'ye bölünme
+sayi = int(input("bir sayi giriniz :"))
+
+if sayi % 5 == 0:
+    print("sayi 5 e tam bölünüyor")
+elif sayi % 7 == 0:
+    print("sayi 7 ye tam bölünüyor")    
+else:
+    print("sayi 5 ve 7 ye tam bölünmüyor")
+
+
+
+#1-9 arası sayi tahmin etme
+tahmin = int(input("1-9 arasinda bir sayi tahmin ediniz :"))
+import random
+sayi = random.randint(1,9)
+
+if sayi == tahmin:
+    print("Tebrikler tahmininiz doğru")
+    print(sayi)
+else:
+    print("malesef yanliş bildiniz")    
+    print("sayi = " , sayi)
+
+
+
+#kelimenin ilk ve son harfini karşılaştırma
+kelime = str(input("bir kelime giriniz :"))
+ilk_harf = str(str(kelime)[0])
+son_harf = str(str(kelime)[-1])
+
+if ilk_harf == son_harf:
+    print("Kelimenin ilk harfi ve son harfi aynidir = " , ilk_harf)   
+else:
+    print("Kelimenin ilk harfi ile son harfi farklidir")
+    print("İlk harf  = " , ilk_harf , "   son harf = " , son_harf)    
+    print("Kelime=" , kelime)
+
+
+
+#vücut kitle endeksi hesaplama
+boy = float(input("Boyunuzu metre cinsinden giriniz ="))
+kilo = int(input("Kilonuzu giriniz ="))
+bmi = kilo / boy**2
+
+if bmi >= 30:
+    print("indeksiniz = " , bmi )
+    print("Obezsiniz")
+elif bmi >= 25:
+    print("indeksiniz = " , bmi )
+    print("Aşiri kilolusunuz")
+elif bmi >= 20:
+    print("indeksiniz = " , bmi )
+    print("Normalsiniz")
+else:
+    print("indeksiniz = " , bmi )
+    print("Zayifsiniz")    

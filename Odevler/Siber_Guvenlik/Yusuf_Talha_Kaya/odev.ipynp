@@ -1,1 +1,42 @@
+# Pi değerini tanımla
+pi = 3.14
 
+# Yarıçapı tanımla
+yaricap = 1.5  # cm cinsinden
+
+# Dairenin alanını hesapla
+alan = pi * (yaricap ** 2)
+
+# Dairenin çevresini hesapla
+cevre = 2 * pi * yaricap
+
+# Sonuçları ekrana yazdır
+print(f"Dairenin Alanı: {alan} cm^2")
+print(f"Dairenin Çevresi: {cevre} cm")
+
+
+hiz_kmh = 110  # Saatteki hız (km/saat)
+yol_km = 500   # Toplam yol (km)
+
+sure_saat = yol_km / hiz_kmh
+
+sure_saat_int = int(sure_saat)  # Tam saat
+sure_dakika = (sure_saat - sure_saat_int) * 60  # Dakikalar
+
+print(f"Araba {yol_km} km'lik yolu {sure_saat_int} saat {int(sure_dakika)} dakika içinde gidecek.")
+
+kelvin_sicaklik = 400
+celsius_sicaklik = kelvin_sicaklik - 273.15
+
+print(f"{kelvin_sicaklik} Kelvin, {celsius_sicaklik:.2f} Celsius derecesine eşittir.")
+
+
+hiz_kmh = 110  # Saatteki hız (km/saat)
+yol_km = 500   # Toplam yol (km)
+
+sure_saat = yol_km / hiz_kmh
+
+sure_saat_int = int(sure_saat)  # Tam saat
+sure_dakika = (sure_saat - sure_saat_int) * 60  # Dakikalar
+
+print(f"Araba {yol_km} km'lik yolu {sure_saat_int} saat {int(sure_dakika)} dakika içinde gidecek.")

@@ -1,0 +1,129 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "kelvin = 400  # 400 Kelvin\n",
+        "celsius = kelvin - 273.15  # Kelvin'i Celsius'a çevirme formülü\n",
+        "\n",
+        "print(f\"{kelvin} Kelvin ısı, {celsius:.2f} Celsius derecesine eşittir.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hY-a2viGktbL",
+        "outputId": "8f3193ec-ac84-4368-f4cb-8b5292eea738"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "400 Kelvin ısı, 126.85 Celsius derecesine eşittir.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "yarıçap=1.5\n",
+        "pi=3.14\n",
+        "alan=3.14*1.15**2\n",
+        "alan"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tfHM4yw39WIV",
+        "outputId": "d065c790-5696-4356-8320-37baf2df4660"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4.1526499999999995"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sayi = 1234  # Dört basamaklı sayı\n",
+        "\n",
+        "ilk= sayi // 1000\n",
+        "son = sayi % 10\n",
+        "\n",
+        "toplam = ilk+ son\n",
+        "\n",
+        "print(f\"{sayi} sayısının ilk ve son basamağının toplamı: {toplam}\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "q50Jma_P-sPP",
+        "outputId": "04b4804b-1b6d-49ee-c90d-fef7cdc2ac2e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1234 sayısının ilk ve son basamağının toplamı: 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "saat=500/110\n",
+        "dakika=saat*60\n",
+        "print(\"Yolu saat:{} dakika:{} 'da alır\".format(saat, dakika))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Zmh0upNGC8Jk",
+        "outputId": "be01ae3c-248a-49f3-8ed9-5cdd12d1e8a2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Yolu saat:4.545454545454546 dakika:272.72727272727275 'da alır\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

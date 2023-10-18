@@ -1,0 +1,35 @@
+/dairenin alanı ve çevresini hesaplama
+r = 1.5
+pi = 3.14
+
+alan = pi * (r**2)
+cevre = 2 * pi * r
+print("dairenin alani = " , alan)
+print("dairenin cevresi = " , cevre)
+
+
+/bir yolu kaç saate gideriz
+yol = int(input("gidilecek yolu giriniz:"))
+hiz = int(input("gidilecek hizi giriniz :")) 
+saat_zaman = yol//hiz 
+dk_zaman = yol//hiz*60 
+print("yolda geçen zaman saat cinsinden : " , saat_zaman , "saat")
+print("yolda geçen zaman dakika cinsinden : ", dk_zaman , "dakika")
+
+
+/bir sayinin ilk ve son basamaklarını toplama
+sayi = int(input("Bir sayi girin: "))
+print("girilen sayi : " , sayi)
+
+ilk_basamak = int(str(sayi)[0])
+
+son_basamak = int(str(sayi)[-1])
+
+toplam = ilk_basamak + son_basamak
+print("İlk ve son basamaklarin toplami:", toplam)
+
+
+/400 kelvini celciusa dönüştürme
+kelvin = int(input("kelvin degeri giriniz :"))
+celcius = kelvin + 273,15
+print("400 kelvin = " , celcius )

@@ -1,0 +1,152 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S5L1PXQ6cOXf",
+        "outputId": "bf86e68b-a7e1-47ed-d1c6-53d27a298de1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bir sayı girin: 13\n",
+            "5'e yada 7'ye bölünen bir sayi girmediniz!\n"
+          ]
+        }
+      ],
+      "source": [
+        "kullanicisayi = int(input(\"Bir sayı girin: \"))\n",
+        "if kullanicisayi % 5 == 0 | kullanicisayi % 7 == 0:\n",
+        "  print('Kullanicinin girdiği sayi: ' + kullanicisayi)\n",
+        "elif kullanicisayi%5==0:\n",
+        "  print(\"Sayi 5'e tam bölünür\")\n",
+        "elif kullanicisayi % 7 == 0:\n",
+        "  print(\"Sayi 7'ye tam bölünür\")\n",
+        "else:\n",
+        "  print(\"5'e yada 7'ye bölünen bir sayi girmediniz!\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "\n",
+        "sayi = random.randint (1,9)\n",
+        "kullanicisayisi = int(input('Tahmin ettiğiniz sayiyi giriniz: '))\n",
+        "if kullanicisayisi==sayi:\n",
+        "  print('Doğru tahmin ettiniz')\n",
+        "else:\n",
+        "  print(f'Yanlış tahmin ettiniz. Doğru sayı: {sayi} ')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "r_kHaIL6sAfk",
+        "outputId": "fa4b4566-9646-4266-ee0d-fa43aef58268"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Tahmin ettiğiniz sayiyi giriniz: 5\n",
+            "Yanlış tahmin ettiniz. Doğru sayı: 6 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "kelime = str(input('Bir kelime giriniz: '))\n",
+        "x = kelime[0]\n",
+        "y = kelime[5]\n",
+        "if x == y:\n",
+        "  print(f'Kelimenin ilk ve son harfi birbirine eşittir ve o harf {kelime[0]} dır.')\n",
+        "else:\n",
+        "  print('Kelimenin ilk ve son harfi birbirine eşit değildir.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3evokeoA0L5t",
+        "outputId": "dd173702-e8b7-4576-b700-cd271ec122a7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bir kelime giriniz: anneme\n",
+            "Kelimenin ilk ve son harfi birbirine eşit değildir.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "boy = float(input('Boyunuzu metre olarak giriniz: '))\n",
+        "kilo = int(input('Kilonuzu giriniz: '))\n",
+        "\n",
+        "bmi = kilo/boy**2\n",
+        "print(f'BMİ = {bmi}')\n",
+        "\n",
+        "if bmi>=30:\n",
+        "  print('Obezsiniz')\n",
+        "elif 25<=bmi<=30:\n",
+        "  print('Aşırı kilolusunuz')\n",
+        "elif 20<=bmi<=25:\n",
+        "  print('Kilonuz normal')\n",
+        "elif bmi<=20:\n",
+        "  print('Zayıfsınız.')\n",
+        "else:\n",
+        "  print('Boyunuzu veya kilonuzu hatalı girdiniz. Lütfen tekrar deneyiniz.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aHhDPMUn2OoR",
+        "outputId": "0d8d3b0a-7d80-4a4c-f613-181a6f79d812"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Boyunuzu metre olarak giriniz: 1.64\n",
+            "Kilonuzu giriniz: 60\n",
+            "BMİ = 22.308149910767405\n",
+            "Kilonuz normal\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

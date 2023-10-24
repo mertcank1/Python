@@ -1,0 +1,155 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ky4Xz657auIA",
+        "outputId": "3bdb17bc-613d-4d6b-e9d9-c3d974d1ddfe"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "sayiyi giriniz:43\n",
+            "43 hem 5'e hem de 7'ye bölünmez.\n",
+            "Hataa!\n"
+          ]
+        }
+      ],
+      "source": [
+        "#soru 1'in cevabı\n",
+        "sayi=int(input(\"sayiyi giriniz:\"))\n",
+        "sayi_1=sayi%5\n",
+        "sayi_2=sayi%7\n",
+        "if sayi_1==0:\n",
+        " print(\"sayi 5 e bölünüyor ama 7 ye bölünmüyor  \")\n",
+        "elif sayi_2==0:\n",
+        " print(\"sayi 7 ye bölünüyor \")\n",
+        "elif sayi_1==0 and sayi_2 ==0:\n",
+        " print(f\"{sayi} sayi hem 5 e hem 7 ye bölünür\")\n",
+        "elif sayi_1 != 0 and sayi_2 != 0:\n",
+        " print(f\"{sayi} hem 5'e hem de 7'ye bölünmez.\")\n",
+        " print(\"Hataa!\")\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#soru 2 nin cevabı\n",
+        "import random\n",
+        "num=random.randint(1,10)\n",
+        "sayi = int(input(\"1 ile 9 arasında bir sayı tahmin edin: \"))\n",
+        "if 1<sayi<10:\n",
+        "  print(\"doğru tahmin\")\n",
+        "else:\n",
+        "  print(\"yanlış tahmin. tekrar deneyiniz\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AsF6EbrxhwHF",
+        "outputId": "22ab0b5a-91e8-4a63-be2d-a9f5781cc9b5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 ile 9 arasında bir sayı tahmin edin: 15\n",
+            "yanlış tahmin. tekrar deneyiniz\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# soru 3 ün cevabı\n",
+        "kelime=(input(\"bir kelime yazınız: \"))\n",
+        "ilk_harf=kelime[0]\n",
+        "son_harf=kelime[-1]\n",
+        "if ilk_harf==son_harf:\n",
+        "  print(\"kelimenin ilk ve son harfi aynıdır\")\n",
+        "else:\n",
+        "  print(\"error\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GKST90c0j9RI",
+        "outputId": "5cb62b56-3724-4e44-9981-4c717c9ae593"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "bir kelime yazınız: akasya\n",
+            "kelimenin ilk ve son harfi aynıdır\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#soru 4 ün cevabı\n",
+        "kilo=int(input(\"kilonuzu giriniz: \"))\n",
+        "boy=int(input(\"boyunuzu giriniz: \"))\n",
+        "bmi=kilo/boy*boy\n",
+        "if bmi >= 30 :\n",
+        "  print(\"obez\")\n",
+        "elif 25 <= bmi < 30:\n",
+        "  print(\"aşırı kilolu\")\n",
+        "elif 20 <= bmi < 25:\n",
+        "  print(\"normal\")\n",
+        "elif bmi < 20:\n",
+        "  print(\"zayıf\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e9wE7l5Xnhgn",
+        "outputId": "8ce04610-a45a-4cbd-dc5c-7473bfde40e9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "kilonuzu giriniz: 20\n",
+            "boyunuzu giriniz: 50\n",
+            "normal\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

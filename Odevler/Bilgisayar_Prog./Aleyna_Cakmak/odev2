@@ -1,0 +1,44 @@
+  sayi = int(input("Bir sayı girin: "))
+
+    if sayi % 5 == 0 or sayi % 7 == 0:
+        print("Çıkan sayı 5 veya 7'ye bölünüyor.")
+    else:
+        print("Çıkan sayı 5 veya 7'ye bölünmüyor.")
+
+
+
+import random
+rastgele= random.randint(1, 9)
+tahmin = int(input("1-9 arasında bir sayı tahmin edin: "))
+if tahmin == rastgele:
+    print("İyi tahmin!")
+else:
+    print("Yanlış tahmin. Doğru sayı:", rastgele)
+
+
+kelime = input("Bir kelime girin: ")
+ilk = kelime[0]
+son= kelime[len(kelime) - 1]
+if ilk == son:
+    print("Kelime başında ve sonunda aynı harfe sahiptir.")
+else:
+    print("Kelime başında ve sonunda aynı harfe sahip değildir.")
+
+
+
+
+    boy = float(input("Boyunuzu (metre olarak) giriniz: "))
+    kilo = float(input("Kilonuzu (kilogram olarak) giriniz: "))
+
+    bmi = kilo / (boy ** 2)   
+   sirala = "zayıf"
+    if bmi >= 30:
+        sirala = "obez"
+    elif 25 <= bmi < 30:
+        sirala = "aşırı kilolu"
+    elif 20 <= bmi <= 25:
+        sirala = "normal"
+
+  
+    print("Beden Kitle İndeksiniz:", bmi)
+    print("Beden Kitle İndeksi Sınıflandırmanız:", sirala)

@@ -1,0 +1,139 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "BUrRSFDmOgts"
+      },
+      "outputs": [],
+      "source": [
+        "\n",
+        "def rakamlari_topla(sayi):\n",
+        "  toplam=0\n",
+        "  while sayi > 0:\n",
+        "       toplam += sayi % 10\n",
+        "  sayi //= 10\n",
+        "  return toplam\n",
+        "  print(\"pozitif bir sayi giriniz.\")\n",
+        "  input()\n",
+        "sonuc=rakamlari_topla(sayi)\n",
+        "print(\"toplam:{toplam}\")\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "def ters_cevir(sayi):\n",
+        "    ters_sayi_str = str(sayi)[::-1]\n",
+        "    ters_sayi = int(ters_sayi_str)\n",
+        "    return ters_sayi\n",
+        "    print(\"sayi giriniz:\")\n",
+        "    input()\n",
+        "    print(f\"Girilen sayının tersi: {ters_sayi}\")"
+      ],
+      "metadata": {
+        "id": "D5UBiHLaY0Wa"
+      },
+      "execution_count": 21,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def ikili_to_ondalik(ikili_sayi):\n",
+        "    try:\n",
+        "        ondalik_sayi = int(ikili_sayi, 2)\n",
+        "        return ondalik_sayi\n",
+        "    except ValueError:\n",
+        "        print(\"Geçerli bir ikili sayı giriniz.\")\n",
+        "\n",
+        "\n",
+        "ikili_sayi = input(\"Bir ikili sayı girin: \")\n",
+        "ondalik_deger = ikili_to_ondalik(ikili_sayi)\n",
+        "\n",
+        "if ondalik_deger is not None:\n",
+        "    print(f\"Girilen ikili sayının ondalık eşdeğeri: {ondalik_deger}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2EvAPFvlZ88I",
+        "outputId": "333eda61-f501-4cd8-9184-fd069e846924"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bir ikili sayı girin: 0\n",
+            "Girilen ikili sayının ondalık eşdeğeri: 0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def is_binary(dizge):\n",
+        "    return all(bit in '01' for bit in dizge)\n",
+        "\n",
+        "\n",
+        "girilen_dizge = input(\"Bir ikili dizge girin: \")\n",
+        "\n",
+        "if is_binary(girilen_dizge):\n",
+        "    print(\"Girilen dizge bir ikili sayıdır.\")\n",
+        "else:\n",
+        "    print(\"Girilen dizge bir ikili sayı değildir.\")"
+      ],
+      "metadata": {
+        "id": "3xlD1RfsaaGd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def is_binary(dizge):\n",
+        "    return all(bit in '01' for bit in dizge)\n",
+        "\n",
+        "def Convert_to_decimal(ikili_sayi):\n",
+        "    if is_binary(ikili_sayi):\n",
+        "        ondalik_sayi = int(ikili_sayi, 2)\n",
+        "        return ondalik_sayi\n",
+        "    else:\n",
+        "        print(\"Girilen dizge bir ikili sayı değildir.\")\n",
+        "        return None\n",
+        "\n",
+        "girilen_ikili_sayi = input(\"Bir ikili sayı girin: \")\n",
+        "ondalik_deger = Convert_to_decimal(girilen_ikili_sayi)\n",
+        "\n",
+        "if ondalik_deger is not None:\n",
+        "    print(f\"Girilen ikili sayının ondalık eşdeğeri: {ondalik_deger}\")"
+      ],
+      "metadata": {
+        "id": "2DF277zdaqWb"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}

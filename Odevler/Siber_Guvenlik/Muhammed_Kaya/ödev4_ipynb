@@ -1,0 +1,76 @@
+def rakamlar_toplami(sayi):
+    toplam = 0
+    while sayi > 0:
+        toplam += sayi % 10
+        sayi //= 10
+    return toplam
+
+sayi = int(input("Pozitif bir tam sayi girin: "))
+
+toplam = rakamlar_toplami(sayi)
+
+print(f"Girdiğiniz sayinin rakamlarinin toplami: " , toplam)
+
+
+
+
+def sayi_tersi(sayi):
+    ters = 0
+    while sayi > 0:
+        ters = ters * 10 + sayi % 10
+        sayi //= 10
+    return ters
+
+sayi = int(input("Bir sayi girin: "))
+
+ters_sayi = sayi_tersi(sayi)
+
+print(f"Girdiğiniz sayinin tersi: " , ters_sayi)
+
+
+
+
+def ikili_to_ondalik(ikili_dizi):
+    ondalik_deger = 0
+    uzunluk = len(ikili_dizi)
+    
+    for i in range(uzunluk):
+        ondalik_deger += int(ikili_dizi[i]) * (2 ** (uzunluk - i - 1))
+    
+    return ondalik_deger
+
+ikili_dizi = input("Bir ikili sayi dizisi girin: ")
+
+ondalik_deger = ikili_to_ondalik(ikili_dizi)
+
+print(f"Girdiğiniz ikili sayinin ondalik eşdeğeri:" , ondalik_deger)
+
+
+
+
+def is_binary(dizge):
+    for karakter in dizge:
+        if karakter not in '01':
+            return False
+    return True
+
+def Convert_to_decimal(dizge):
+    if is_binary(dizge):
+        ondalik_deger = 0
+        uzunluk = len(dizge)
+        
+        for i in range(uzunluk):
+            ondalik_deger += int(dizge[i]) * (2 ** (uzunluk - i - 1))
+        
+        return ondalik_deger
+    else:
+        return None
+
+dizge = input("Bir dizge girin: ")
+
+ondalik_sonuc = Convert_to_decimal(dizge)
+
+if ondalik_sonuc is not None:
+    print(f"Girilen ikili dizge ondalik olarak {ondalik_sonuc} değerine eşdeğerdir.")
+else:
+    print("Girilen dizge bir ikili dizge değildir.")

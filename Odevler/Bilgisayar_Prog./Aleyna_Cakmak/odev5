@@ -1,0 +1,34 @@
+deger = []
+  while True:
+    degers = int(input("Bir değer girin (-1'e basın çıkmak için): "))
+    if degers == -1:
+      break
+    deger.append(degers)
+
+ 
+  limit = int(input("Limiti girin: "))
+
+
+  index = 0
+  for i in range(len(tumdeger)):
+    if tumdeger[i] > limit:
+      index = i
+      break
+  tumdeger.pop(index)
+
+
+  print("Liste:", tumdeger)
+
+
+
+  kelime = []
+  for i in range(5):
+    kelimes = input("Bir kelime girin: ")
+    kelime.append(kelime)
+
+  
+  for kelimes in kelimeler[::-1]:
+    if kelime[0].isupper():
+      print(kelime)
+  enkisakelime = min(kelimeler, key=len)
+  print("En kısa kelime:", enkisakelime)

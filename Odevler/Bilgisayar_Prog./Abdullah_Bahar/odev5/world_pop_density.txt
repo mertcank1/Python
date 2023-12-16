@@ -1,0 +1,3 @@
+Turkiye-0.05 kisi/km^2
+Almanya-0.08 kisi/km^2
+Fransa-0.06 kisi/km^2
